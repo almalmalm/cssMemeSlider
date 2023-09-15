@@ -1,0 +1,35 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  width: 2400px;
+  height: 400px;
+}
+
+.slider__img {
+  height: 100%;
+  width: 100%;
+}
+
+.slider__slide {
+  width: 600px;
+}
+
+.slider-wrapper {
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.slider {
+  transform: translate(-25%);
+}
+
+.slider__controls {
+  position: absolute;
+  top: 500px;
+  display: flex;
+}
