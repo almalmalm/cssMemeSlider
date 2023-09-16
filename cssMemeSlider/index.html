@@ -12,28 +12,27 @@
     <div class="container">
         <header class="header"></header>
         <main class="main">
-            <h1>CSS Meme Slider</h1>
             <div class="slider-wrapper">
+                <input type="radio" class="slider__input" id="item-1" name="test" checked>
+                <input type="radio" class="slider__input" id="item-2" name="test">
                 <div class="slider">
-                    <div class="slider__slide slider__slide_first" id="1">
-                        <img src="img/meme1.jpg" alt="First meme" class="slider__img">
+                    <div class="slider__slide slider__slide_first">
+                        <img src="img/meme1.jpeg" alt="First meme" class="slider__img">
                     </div>
-                    <div class="slider__slide slider__slide_second" id="2">
-                        <img src="img/meme2.jpg" alt="Second meme" class="slider__img">
+                    <div class="slider__slide slider__slide_second">
+                        <img src="img/meme2.jpeg" alt="Second meme" class="slider__img">
 
                     </div>
-                    <div class="slider__slide slider__slide_third" id="3">
-                        <img src="img/meme3.jpg" alt="Third meme" class="slider__img">
-                    </div>
-                    <div class="slider__slide slider__slide_fourth" id="4">
-                        <img src="img/meme4.jpg" alt="Fourth meme" class="slider__img">
-                    </div>
                 </div>
-                <div class="slider__controls">
-                    <a href="#1" class="controls__link controls__link_first">1</a>
-                    <a href="#2" class="controls__link controls__link_second">2</a>
-                    <a href="#3" class="controls__link controls__link_third">3</a>
-                    <a href="#4" class="controls__link controls__link_fourth">4</a>
+                <div class="slider__content">
+                    <div class="slider__text">
+                        <div class="text text_first">First</div>
+                        <div class="text text_second">Second</div>
+                    </div>
+                    <div class="slider__controls">
+                        <label for="item-1">1</label>
+                        <label for="item-2">2</label>
+                    </div>
                 </div>
             </div>
         </main>
