@@ -9,38 +9,48 @@
 </head>
 
 <body>
-    <div class="slider-wrapper">
-        <input type="radio" class="slider__input" id="item-1" name="test" checked>
-        <input type="radio" class="slider__input" id="item-2" name="test">
-        <input type="radio" class="slider__input" id="item-3" name="test">
-        <input type="radio" class="slider__input" id="item-4" name="test">
-        <div class="slider">
-            <div class="slider__slide slider__slide_first">
-                <img src="img/meme1.jpg" alt="First meme" class="slider__img">
+    <div class="container">
+        <div class="slider-wrapper">
+            <input type="radio" class="slider__input" id="slide-1" name="slider" checked>
+            <input type="radio" class="slider__input" id="slide-2" name="slider">
+            <input type="radio" class="slider__input" id="slide-3" name="slider">
+            <input type="radio" class="slider__input" id="slide-4" name="slider">
+            <div class="slider">
+                <div class="slider__slide slider__slide_first">
+                    <img src="img/meme1.jpg" alt="First meme" class="slider__img">
+                </div>
+                <div class="slider__slide slider__slide_second">
+                    <img src="img/meme2.jpg" alt="Second meme" class="slider__img">
+                </div>
+                <div class="slider__slide slider__slide_second">
+                    <img src="img/meme3.jpg" alt="Third meme" class="slider__img">
+                </div>
+                <div class="slider__slide slider__slide_second">
+                    <img src="img/meme4.jpg" alt="Fourth meme" class="slider__img">
+                </div>
             </div>
-            <div class="slider__slide slider__slide_second">
-                <img src="img/meme2.jpg" alt="Second meme" class="slider__img">
-            </div>
-            <div class="slider__slide slider__slide_second">
-                <img src="img/meme3.jpg" alt="Third meme" class="slider__img">
-            </div>
-            <div class="slider__slide slider__slide_second">
-                <img src="img/meme4.jpg" alt="Fourth meme" class="slider__img">
-            </div>
-        </div>
-        <div class="slider__content">
-            <div class="slider__text">
-                <div class="text text_first">When you hear 'It's just a simple frontend update' for the 100th
-                    time...</div>
-                <div class="text text_second">When your frontend project finally goes live...</div>
-                <div class="text text_third">Not sure if I'm debugging or just creating new bugs...</div>
-                <div class="text text_fourth">When your code becomes a labyrinth of complexity...</div>
-            </div>
-            <div class="slider__controls">
-                <label for="item-1" class="controls__button"></label>
-                <label for="item-2" class="controls__button"></label>
-                <label for="item-3" class="controls__button"></label>
-                <label for="item-4" class="controls__button"></label>
+            <div class="slider__content">
+                <div class="slider__text">
+                    <div class="text text_first">When you hear 'It's just a simple frontend update' for the 100th
+                        time...</div>
+                    <div class="text text_second">When your frontend project finally goes live...</div>
+                    <div class="text text_third">Not sure if I'm debugging or just creating new bugs...</div>
+                    <div class="text text_fourth">When your code becomes a labyrinth of complexity...</div>
+                </div>
+                <div class="slider__controls">
+                    <label for="slide-1" class="controls__button">
+                        <div class="btn"></div>
+                    </label>
+                    <label for="slide-2" class="controls__button">
+                        <div class="btn"></div>
+                    </label>
+                    <label for="slide-3" class="controls__button">
+                        <div class="btn"></div>
+                    </label>
+                    <label for="slide-4" class="controls__button">
+                        <div class="btn"></div>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
