@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider-wrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.slider__slide {
+  min-width: 100%;
+  transition: 0.7s ease;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.slider__text {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  flex-grow: 7;
+}
+
+.text {
+  min-width: 100%;
+  transition: 0.7s ease;
+}
+
+.slider__content {
+  display: flex;
+  flex-grow: 3;
+}
+
+.slider__input {
+  display: none;
+}
+
+#slide-4:checked ~ .slider > .slider__slide {
+  transform: translate(-300%);
+}
+
+#slide-3:checked ~ .slider > .slider__slide {
+  transform: translate(-200%);
+}
+
+#slide-2:checked ~ .slider > .slider__slide {
+  transform: translate(-100%);
+}
+
+#slide-1:checked ~ .slider > .slider__slide {
+  transform: translate(0);
+}
+
+#slide-4:checked ~ .slider__content .text {
+  transform: translate(-300%);
+}
+
+#slide-3:checked ~ .slider__content .text {
+  transform: translate(-200%);
+}
+
+#slide-2:checked ~ .slider__content .text {
+  transform: translate(-100%);
+}
+
+#slide-1:checked ~ .slider__content .text {
+  transform: translate(0);
+}
+
+.controls__button {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #30333f;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.1rem solid #7586d6;
+}
+
+#slide-1:checked ~ .slider__content .slider__controls .controls__button[for='slide-1'] .btn {
+  background-color: #7586d6;
+}
+
+#slide-2:checked ~ .slider__content .slider__controls .controls__button[for='slide-2'] .btn {
+  background-color: #7586d6;
+}
+
+#slide-3:checked ~ .slider__content .slider__controls .controls__button[for='slide-3'] .btn {
+  background-color: #7586d6;
+}
+
+#slide-4:checked ~ .slider__content .slider__controls .controls__button[for='slide-4'] .btn {
+  background-color: #7586d6;
+}
+
+.controls__button:hover .btn {
+  background-color: #ffffff;
+}
+
+.controls__button:active .btn {
+  background-color: #2d4acb;
+}
+
+.container {
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .slider__content {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+
+  .container {
+    width: 80vw;
+  }
+}
